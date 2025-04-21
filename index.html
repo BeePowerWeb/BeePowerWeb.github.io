@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上海交通大学智能用电网络团队 - 2026级硕博士招生</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #0055A2; /* 交大蓝 */
+            --secondary-color: #26A0DA; /* 亮蓝色 */
+            --accent-color: #52C41A; /* 绿色 - 象征新能源 */
+            --gradient-bg: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        body {
+            font-family: "Microsoft YaHei", "Segoe UI", Tahoma, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .hero-section {
+            background-image: var(--gradient-bg);
+            color: white;
+            padding: 5rem 0;
+            position: relative;
+        }
+                
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--gradient-bg);
+        }
+        
+        .section-title.text-center::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .team-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .professor-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        
+        .other-professor-img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+        
+        .icon-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .icon-box i {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-right: 15px;
+            background: rgba(82, 196, 26, 0.1);
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        
+        .social-links {
+            margin-top: 15px;
+        }
+        
+        .social-links a {
+            color: var(--primary-color);
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+        
+        footer {
+            background-image: var(--gradient-bg);
+            color: white;
+            padding: 2rem 0;
+        }
+        
+        .btn-primary {
+            background-image: var(--gradient-bg);
+            border: none;
+            padding: 10px 25px;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(0, 85, 162, 0.3);
+        }
+        
+        .research-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .research-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .requirements-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .requirements-header {
+            color: white;
+            background: var(--gradient-bg);
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+            margin: -25px -25px 20px -25px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-image: var(--gradient-bg);">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-lightning-charge-fill"></i> 上海交通大学智能用电网络团队
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">团队介绍</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#professors">导师团队</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#research">研究方向</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#requirements">招生要求</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主视觉区域 -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-4 fw-bold mb-4">智能电力系统前沿团队</h1>
+                    <h2 class="h3 mb-4">聚焦智能电力系统最前沿，打造能源领域创新型人才</h2>
+                    <p class="lead mb-5">【新终端·新平台·新机制·新调度】何光宇教授团队招收2026级硕博士</p>
+                    <a href="#contact" class="btn btn-light btn-lg me-3">申请加入</a>
+                    <a href="#research" class="btn btn-outline-light btn-lg">了解研究方向</a>
+                </div>
+                <div class="col-lg-5">
+                    <img src="images/智能电网.jpg" alt="智能电网示意图" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 团队介绍 -->
+    <section id="team" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">课题组介绍</h2>
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <img src="images/课题组合照.jpg" alt="课题组合照" class="team-img mb-4">
+                    <p class="text-center mb-5">
+                        上海交通大学智能用电网络团队专注于智能电力系统研究，
+                        聚焦"四新"（新终端、新平台、新机制、新调度）创新技术，
+                        致力于培养能源领域创新型人才和解决电力系统智能化发展中的关键问题。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 导师团队 - 何光宇教授突出显示 -->
+    <section id="professors" class="py-5" style="background-color: #f0f8ff;">
+        <div class="container">
+            <h2 class="section-title text-center">导师团队</h2>
+            
+            <!-- 何光宇教授 - 突出显示 -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-5">
+                    <img src="https://eei.sjtu.edu.cn/upload/2021-05/162099277941560900.jpg" alt="何光宇教授" class="professor-img">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="h2 mb-3">何光宇</h3>
+                    <h4 class="h5 mb-4 text-muted">长聘教授，博士生导师</h4>
+                    <p class="mb-4" style="font-size: 1.1rem; line-height: 1.8;">
+                        IEEE高级会员、IET Fellow，中国电机工程学会高级会员，长期致力于智能电力系统与智能电网领域的前沿研究。
+                        清华大学博士，曾在清华大学任教十余年，并作为高级访问学者赴法国IDEA研究所从事微网与虚拟电厂研究。
+                        在国内外学术期刊和会议上发表高水平论文数十篇，主持多项国家级、省部级科研项目。
+                    </p>
+                    <div class="social-links">
+                        <a href="https://eei.sjtu.edu.cn/faculty-detail.php?id=56" target="_blank" title="个人主页">
+                            <i class="bi bi-globe"></i> 个人主页
+                        </a>
+                        <a href="mailto:gyhe@sjtu.edu.cn" title="发送邮件" class="ms-3">
+                            <i class="bi bi-envelope-fill"></i> gyhe@sjtu.edu.cn
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 其他导师 -->
+            <div class="row g-4 mt-4">
+                <!-- 范帅博士 -->
+                <div class="col-lg-6">
+                    <div class="row align-items-center">
+                        <div class="col-md-5">
+                            <img src="https://eei.sjtu.edu.cn/upload/2022-10/166584906368523800.jpg" alt="范帅博士" class="other-professor-img">
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="h4">范帅</h3>
+                            <p class="text-muted mb-3">副研究员，硕士生导师</p>
+                            <p>
+                                上海交通大学电气工程系副研究员，长期致力于智能电力系统与智能电网领域的前沿研究，
+                                曾获国家留学基金委公派赴美国Southern Methodist University进行访学研究。
+                                主要聚焦虚拟电厂自趋优运行和大规模需求响应等关键技术。
+                            </p>
+                            <div class="social-links">
+                                <a href="https://eei.sjtu.edu.cn/faculty-detail.php?id=1406" target="_blank">
+                                    <i class="bi bi-globe"></i> 个人主页
+                                </a>
+                                <a href="mailto:fanshuai@sjtu.edu.cn" class="ms-3">
+                                    <i class="bi bi-envelope-fill"></i> 邮箱
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 黄任可博士 -->
+                <div class="col-lg-6">
+                    <div class="row align-items-center">
+                        <div class="col-md-5">
+                            <img src="https://gift.sjtu.edu.cn/_upload/article/images/e3/54/b1a36c344262bd1ad6d17ea5fa6f/23abe5c8-c842-4653-bdcf-fdb3daa646d4_s.png" alt="黄任可博士" class="other-professor-img">
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="h4">黄任可</h3>
+                            <p class="text-muted mb-3">副教授，IEEE高级会员</p>
+                            <p>
+                                上海交通大学溥渊未来技术学院副教授，在复杂能源系统建模、仿真与控制领域拥有深厚的研究背景。
+                                美国佐治亚理工学院电气工程博士，曾任美国太平洋西北国家实验室主任电气工程师，
+                                获多项国际国内重要奖项。
+                            </p>
+                            <div class="social-links">
+                                <a href="https://gift.sjtu.edu.cn/hrk/main.htm" target="_blank">
+                                    <i class="bi bi-globe"></i> 个人主页
+                                </a>
+                                <a href="mailto:huangrenke@sjtu.edu.cn" class="ms-3">
+                                    <i class="bi bi-envelope-fill"></i> 邮箱
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 研究方向 -->
+    <section id="research" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">研究方向</h2>
+            <p class="text-center mb-5">聚焦"四新"智能电力系统创新技术</p>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="research-item">
+                        <div class="text-center">
+                            <i class="bi bi-cpu research-icon"></i>
+                            <h3 class="h4 mb-3">新终端</h3>
+                        </div>
+                        <p>智能用电设备/互动智能体/多智能体协同（具身智能）</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="research-item">
+                        <div class="text-center">
+                            <i class="bi bi-cloud research-icon"></i>
+                            <h3 class="h4 mb-3">新平台</h3>
+                        </div>
+                        <p>自趋优智慧园区平台/主动虚拟电厂平台/需求响应平台</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="research-item">
+                        <div class="text-center">
+                            <i class="bi bi-graph-up-arrow research-icon"></i>
+                            <h3 class="h4 mb-3">新机制</h3>
+                        </div>
+                        <p>新型电力市场/电力互替品/准线需求响应（节点-子准线体系）</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="research-item">
+                        <div class="text-center">
+                            <i class="bi bi-gear research-icon"></i>
+                            <h3 class="h4 mb-3">新调度</h3>
+                        </div>
+                        <p>源网荷储双侧协同优化/新能源承载力在线评估/电网虚拟增容</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学校介绍 -->
+    <section class="py-5" style="background-color: #f0f8ff;">
+        <div class="container">
+            <h2 class="section-title text-center">学校介绍</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://vs.sjtu.edu.cn/jtdx/resources/images/12000/2_4adb29ec-3bfb-48d9-bf65-9a45f4d60a6a.jpg" alt="上海交通大学" class="img-fluid rounded-3 shadow-lg">
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-4">
+                        <h3 class="mb-4">顶尖电气学科 | 国际领先电网技术</h3>
+                        <div class="icon-box">
+                            <i class="bi bi-award"></i>
+                            <div>
+                                <h4>教育部首批"双一流"电气学科</h4>
+                                <p>2018年首批入选国家电气工程"双一流"学科建设名单</p>
+                            </div>
+                        </div>
+                        <div class="icon-box">
+                            <i class="bi bi-building"></i>
+                            <div>
+                                <h4>国家能源智能电网研发中心</h4>
+                                <p>拥有省级重点实验室/工程中心4个</p>
+                            </div>
+                        </div>
+                        <div class="icon-box">
+                            <i class="bi bi-lightning"></i>
+                            <div>
+                                <h4>新能源并网技术国际领跑者</h4>
+                                <p>在新能源并网、智能配用电系统、智能电网信息及通信技术的研究处于国际先进水平</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 招生要求 -->
+    <section id="requirements" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">招生要求</h2>
+            <p class="text-center mb-5">我们期待与您共同探索智能电力系统的未来</p>
+            
+            <div class="row g-4">
+                <!-- 硬条件 -->
+                <div class="col-lg-6">
+                    <div class="requirements-section h-100">
+                        <div class="requirements-header">
+                            <h3 class="h5 mb-0">硬条件</h3>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                电气/自动化/计算机/数学等相关专业
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                数学建模能力突出（优化/博弈论/随机过程……）
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                熟悉Python/MATLAB/Gurobi/OpenDSS/JAVA等工具链
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 软特质 -->
+                <div class="col-lg-6">
+                    <div class="requirements-section h-100">
+                        <div class="requirements-header">
+                            <h3 class="h5 mb-0">软特质</h3>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="bi bi-star-fill text-warning me-2"></i>
+                                能快速迭代思维，适应学科交叉挑战
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-star-fill text-warning me-2"></i>
+                                渴望成为新型电力系统建设核心力量
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-star-fill text-warning me-2"></i>
+                                对"互联网+能源"有颠覆性想象
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="py-5" style="background-color: #f0f8ff;">
+        <div class="container">
+            <h2 class="section-title text-center">联系我们</h2>
+            <p class="text-center mb-5">感兴趣的同学请发送个人简历与成绩单至以下邮箱</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="bg-white p-4 rounded-3 shadow-sm">
+                        <div class="mb-4 text-center">
+                            <i class="bi bi-envelope-paper-fill" style="font-size: 3rem; color: var(--primary-color);"></i>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-person-circle me-3" style="font-size: 1.5rem;"></i>
+                                    <div>
+                                        <h5 class="mb-0">何光宇 教授</h5>
+                                        <p class="mb-0">gyhe@sjtu.edu.cn</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-person-circle me-3" style="font-size: 1.5rem;"></i>
+                                    <div>
+                                        <h5 class="mb-0">范帅 副研究员</h5>
+                                        <p class="mb-0">fanshuai@sjtu.edu.cn</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-person-circle me-3" style="font-size: 1.5rem;"></i>
+                                    <div>
+                                        <h5 class="mb-0">黄任可 副教授</h5>
+                                        <p class="mb-0">huangrenke@sjtu.edu.cn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-light p-3 rounded mb-4">
+                            <h5 class="mb-2">注意事项：</h5>
+                            <ul class="mb-0">
+                                <li>邮件主题请注明"硕士/博士申请+名字"</li>
+                                <li>避免使用qq邮箱</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <a href="mailto:gyhe@sjtu.edu.cn?subject=博士申请" class="btn btn-primary me-2">发送申请邮件</a>
+                            <a href="#home" class="btn btn-outline-secondary">返回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="text-center py-4">
+        <div class="container">
+            <p>© 2024 上海交通大学电子信息与电气工程学院 - 智能用电网络团队</p>
+            <p>
+                <i class="bi bi-geo-alt-fill"></i> 上海市闵行区东川路800号
+                <i class="bi bi-telephone-fill ms-3"></i> 021-XXXXXXXX
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
